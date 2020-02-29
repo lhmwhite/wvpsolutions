@@ -1,0 +1,20 @@
+@import '../base/colors';
+
+.pallet {
+  min-height: 200px;
+  &-1 {
+    background-color: $color1;
+  }
+  &-2 {
+    background-color: $color2;
+  }
+  &-3 {
+    background-color: $color3;
+  }
+  &-4 {
+    background-color: $color4;
+  }
+  & p {
+    color: #fff;
+  }
+}
