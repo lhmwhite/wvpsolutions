@@ -10,7 +10,7 @@ import Header from '../components/Header'
 
 const AppRouter = () => (
   <BrowserRouter>
-    <div>
+    <div className="content-container">
       <Header />
       <Switch>
         <Route path="/" component={DashboardPage} exact={true} />
@@ -20,6 +20,10 @@ const AppRouter = () => (
         <Route path="/help" component={HelpPage} />
         <Route component={NotFoundPage} />
       </Switch>
+    </div>
+    <div className="body-background-container">
+      <div className="filter" />
+      <div className="body-background" />
     </div>
   </BrowserRouter>
 )
