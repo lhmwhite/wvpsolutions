@@ -1,10 +1,14 @@
 @import '../base/colors';
+@import '../base/settings';
 
 .pallet {
   min-height: 200px;
   border-radius: 15px;
   padding: 10px 2.5%;
   margin: 0 0 40px 0;
+  -webkit-box-shadow: 1px 18px 20px -2px $color-dark;
+  -moz-box-shadow: 1px 18px 20px -2px $color-dark;
+  box-shadow: 1px 18px 20px -2px $color-dark;
   &-1 {
     background-color: $color1;
   }
@@ -34,7 +38,6 @@ h1 {
   font-style: italic;
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 40px;
   transition: 0.75s;
   cursor: pointer;
   &:hover {
@@ -46,5 +49,5 @@ h2 {
   color: rgba($color4, 0.75);
   font-family: 'Bree Serif', serif;
   font-weight: 100;
-  font-size: 30px;
+  font-size: $l-size;
 }

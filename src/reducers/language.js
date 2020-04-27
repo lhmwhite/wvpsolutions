@@ -7,7 +7,14 @@ const INITIAL_STATE = {
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case LANGUAGE:
-      return { ...state, language: action.payload }
+      const switchLang = arg => {
+        let langSelect = ''
+        arg === 'english' ? (langSelect = 'español') : (langSelect = 'english')
+        return langSelect
+      }
+      switchLang(action.payload)
+
+      return { ...state, language: switchLang(action.payload) }
 
     default:
       return { ...state }

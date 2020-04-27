@@ -1,0 +1,19 @@
+@import '../base/colors';
+@import '../base/settings';
+
+.logo {
+  border: 8px solid rgba($color1, 0.8);
+  width: 200px;
+  height: 200px;
+  max-height: 200px;
+  text-align: center;
+  background-color: $color-dark;
+  align-self: center;
+  margin: auto;
+  & span:nth-child(1) {
+    font-size: $xl-size;
+  }
+  & span:nth-child(2) {
+    font-size: $l-size;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../base/colors';
+
+header {
+  height: 225px;
+}
+
+.nav {
+  &-item {
+    color: #fff;
+    text-align: center;
+    background-color: $color1;
+    border-radius: 5px;
+    max-height: 100px;
+    max-width: 150px;
+    padding: 0 10px;
+    margin: auto;
+    &.active {
+      background-color: $color4;
+    }
+  }
+  &-icon {
+    align-self: center;
+  }
+}
